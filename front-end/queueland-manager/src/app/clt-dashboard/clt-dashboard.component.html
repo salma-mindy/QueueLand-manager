@@ -1,0 +1,661 @@
+<div class="ttout">
+    <div class="wrapper">
+
+        <div class="top_navbar">
+            <div class="logo">
+                <img src="./assets/images/queue.png" width="170">
+            </div>
+            <div class="top_menu">
+                <div class="home_link">
+                    <a routerLink="/">
+                        <span class="icon"><i class="fa fa-home"></i></span>
+                        <span>QLM-Accueil</span>
+                    </a>
+                </div>
+                <div class="right_info">
+                    <div class="icon_wrap">
+                        <div class="icon">
+                            <i class="fa fa-bell"></i>
+                        </div>
+                    </div>
+                    <div class="icon_wrap">
+                        <div class="icon">
+                            <i class="fa fa-cog"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- mainbody -->
+        <div class="main_body">
+
+            <!-- sideb -->
+            <div class="sidebar_menu">
+                <div class="inner__sidebar_menu">
+
+                    <!-- elementdash -->
+                    <ul class="list-items">
+                        <li class="tablinks" onclick="Buttonclick(event, 'button-1')" id="defaultOpen">
+                            <span class="icon">
+		              	<i class="fa fa-home"></i></span>
+                            <span class="list">Accueil</span>
+                        </li>
+                        <br>
+                        <li class="tablinks" onclick="Buttonclick(event, 'button-2')">
+                            <span class="icon"><i class="fa fa-ticket"></i></span>
+                            <span class="list">Obtenir un ticket</span>
+                        </li>
+                        <br>
+                        <li class="tablinks" onclick="Buttonclick(event, 'button-3')">
+                            <span class="icon"><i class="fa fa-ticket"></i></span>
+                            <span class="list">Reserver un ticket</span>
+                        </li>
+                        <br>
+                        <li class="tablinks" onclick="Buttonclick(event, 'button-4')">
+                            <span class="icon"><i class="fa fa-users"></i></span>
+                            <span class="list">Salle d'attente</span>
+                        </li>
+                    </ul>
+                    <!-- elementdash -->
+
+                    <div class="hamburger">
+                        <div class="inner_hamburger">
+                            <span class="arrow">
+			                <i class="fa fa-long-arrow-alt-left"></i>
+			                <i class="fa fa-long-arrow-alt-right"></i>
+			            </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- sideb -->
+
+            <!-- content -->
+            <div class="container">
+                <div class="content">
+
+                    <!-- (start) accueil -->
+                    <div id="button-1" class="inner-content">
+                        <div class='row dashboard-cards'>
+                            <div class='card col-md-4'>
+                                <div class='card-title'>
+                                    <img src="./assets/images/nsia.png" width="90" alt=" "> NSIA banque
+                                    <br>
+                                    <small>Angré 8ème tranche</small>
+
+                                    <div class='task-count'>
+                                        14
+                                    </div>
+                                </div>
+                                <div class='card-flap flap1'>
+                                    <div class='card-description'>
+                                        <ul class='task-list'>
+                                            <li>
+                                                Renseignement
+                                                <span>02</span>
+                                            </li>
+                                            <li>
+                                                Ouverture de compte
+                                                <span>7</span>
+                                            </li>
+                                            <li>
+                                                Retrait d'argent
+                                                <span>05</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class='card-flap flap2'>
+                                        <div class='card-actions'>
+                                            <a class='btn' href='#'>Fermer</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='card col-md-4'>
+                                <div class='card-title'>
+                                    <img src="./assets/images/allliance.png " width="90 " alt=" ">Allianz
+                                    <br>
+                                    <small>II plateau</small>
+
+                                    <div class='task-count'>
+                                        101
+                                    </div>
+                                </div>
+                                <div class='card-flap flap1'>
+                                    <div class='card-description'>
+                                        <ul class='task-list'>
+                                            <li>
+                                                Retrait d'argent
+                                                <span>59</span>
+                                            </li>
+                                            <li>
+                                                Ouverture de compte
+                                                <span>21</span>
+                                            </li>
+                                            <li>
+                                                Endosser un chèque
+                                                <span>18</span>
+                                            </li>
+                                            <li>
+                                                Reclammation
+                                                <span>3</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class='card-flap flap2'>
+                                        <div class='card-actions'>
+                                            <a class='btn' href='#'>Fermer</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='card col-md-4'>
+                                <div class='card-title'>
+
+                                    <img src="./assets/images/nsia.png" width="90" alt=""> NSIA Banque
+                                    <br>
+                                    <small>Plateau</small>
+
+                                    <div class='task-count'>
+                                        104
+                                    </div>
+                                </div>
+                                <div class='card-flap flap1'>
+                                    <div class='card-description'>
+                                        <ul class='task-list'>
+                                            <li>
+                                                Ouvrir un compte épargne
+                                                <span>10</span>
+                                            </li>
+                                            <li>
+                                                Renseignement
+                                                <span>16</span>
+                                            </li>
+                                            <li>
+                                                Depôt d'argent
+                                                <span>77</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class='card-flap flap2'>
+                                        <div class='card-actions'>
+                                            <a class='btn' href='#'>Fermer</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='card col-md-4'>
+                                <div class='card-title'>
+                                    <img src="./assets/images/ecob.jpeg" width="90" alt=" "> ECOBANK
+                                    <br>
+                                    <small>Anyama</small>
+
+                                    <div class='task-count'>
+                                        76
+                                    </div>
+                                </div>
+                                <div class='card-flap flap1'>
+                                    <div class='card-description'>
+                                        <ul class='task-list'>
+                                            <li>
+                                                Retrait d'argent
+                                                <span>59</span>
+                                            </li>
+                                            <li>
+                                                Depôt d'argent
+                                                <span>17</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class='card-flap flap2'>
+                                        <div class='card-actions'>
+                                            <a class='btn' href='#'>Fermer</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='card col-md-4'>
+                                <div class='card-title'>
+                                    <img src="./assets/images/ba.png" width="90" alt=" "> BANQUE ATLANTIQUE
+                                    <br>
+                                    <small>Cocody II Plateaux</small>
+                                    <div class='task-count'>
+                                        43
+                                    </div>
+                                </div>
+                                <div class='card-flap flap1'>
+                                    <div class='card-description'>
+                                        <ul class='task-list'>
+                                            <li>
+                                                Retrait d'argent
+                                                <span>10</span>
+                                            </li>
+                                            <li>
+                                                Reclammation
+                                                <span>02</span>
+                                            </li>
+                                            <li>
+                                                Depôt d'argent
+                                                <span>18</span>
+                                            </li>
+                                            <li>
+                                                Renseignement
+                                                <span>13</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class='card-flap flap2'>
+                                        <div class='card-actions'>
+                                            <a class='btn' href='#'>Fermer</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='card col-md-4'>
+                                <div class='card-title'>
+                                    <img src="./assets/images/sib.png" width="90" alt=" "> SIB
+                                    <br>
+                                    <small>Agence Rivera 3</small>
+
+                                    <div class='task-count'>
+                                        24
+                                    </div>
+                                </div>
+                                <div class='card-flap flap1'>
+                                    <div class='card-description'>
+                                        <ul class='task-list'>
+                                            <li>
+                                                Renseignement
+                                                <span>10</span>
+                                            </li>
+                                            <li>
+                                                Reclammation
+                                                <span>11</span>
+                                            </li>
+                                            <li>
+                                                Retait d'argent
+                                                <span>3</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class='card-flap flap2'>
+                                        <div class='card-actions'>
+                                            <a class='btn' href='#'>Fermer</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='card col-md-4'>
+                                <div class='card-title'>
+                                    <img src="./assets/images/uba.jpeg" width="90" alt=" "> UBA
+                                    <br>
+                                    <small>Bassam</small>
+                                    <div class='task-count'>
+                                        159
+                                    </div>
+                                </div>
+                                <div class='card-flap flap1'>
+                                    <div class='card-description'>
+                                        <ul class='task-list'>
+                                            <li>
+                                                Retrai d'argent
+                                                <span>59</span>
+                                            </li>
+                                            <li>
+                                                Coriger un chèque
+                                                <span>52</span>
+                                            </li>
+                                            <li>
+                                                Ouverture de compte
+                                                <span>45</span>
+                                            </li>
+                                            <li>
+                                                Reclammation de chèque
+                                                <span>5</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class='card-flap flap2'>
+                                        <div class='card-actions'>
+                                            <a class='btn' href='#'>Fermer</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='card col-md-4'>
+                                <div class='card-title'>
+                                    <img src="./assets/images/sg.jpeg" width="90" alt=" "> SGBCI
+                                    <br>
+                                    <small> Bingerville</small>
+
+                                    <div class='task-count'>
+                                        34
+                                    </div>
+                                </div>
+                                <div class='card-flap flap1'>
+                                    <div class='card-description'>
+                                        <ul class='task-list'>
+                                            <li>
+                                                Depôt de chèque
+                                                <span>15</span>
+                                            </li>
+                                            <li>
+                                                Hypothèque
+                                                <span>12</span>
+                                            </li>
+                                            <li>
+                                                Rembouser un prêt
+                                                <span>7</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class='card-flap flap2'>
+                                        <div class='card-actions'>
+                                            <a class='btn' href='#'>Fermer</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='card col-md-4'>
+                                <div class='card-title'>
+                                    <img src="./assets/images/bicici.jpeg" width="90" alt=" "> BICICI
+                                    <br>
+                                    <small>Ajame-williamsville</small>
+
+                                    <div class='task-count'>
+                                        17
+                                    </div>
+                                </div>
+                                <div class='card-flap flap1'>
+                                    <div class='card-description'>
+                                        <ul class='task-list'>
+                                            <li>
+                                                Demande de prêt
+                                                <span>2</span>
+                                            </li>
+                                            <li>
+                                                Ouvrir un compte épargne
+                                                <span>6</span>
+                                            </li>
+                                            <li>
+                                                Reclammation
+                                                <span>6</span>
+                                            </li>
+                                            <li>
+                                                Depôt de dossier
+                                                <span>03</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class='card-flap flap2'>
+                                        <div class='card-actions'>
+                                            <a class='btn' href='#'>Fermer</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='card col-md-4'>
+                                <div class='card-title'>
+                                    <img src="./assets/images/bni.jpeg" width="90" alt=" "> BNI
+                                    <br>
+                                    <small>Plateau</small>
+
+                                    <div class='task-count'>
+                                        104
+                                    </div>
+                                </div>
+                                <div class='card-flap flap1'>
+                                    <div class='card-description'>
+                                        <ul class='task-list'>
+                                            <li>
+                                                Retrait d'argent
+                                                <span>59</span>
+                                            </li>
+                                            <li>
+                                                Endosser un chèque
+                                                <span>33</span>
+                                            </li>
+                                            <li>
+                                                Ouverture de compte
+                                                <span>5</span>
+                                            </li>
+                                            <li>
+                                                Demande de prêt
+                                                <span>7</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class='card-flap flap2'>
+                                        <div class='card-actions'>
+                                            <a class='btn' href='#'>Fermer</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- (end) accueil -->
+
+
+
+
+                    <!-- (start)otenir un ticket -->
+                    <div id="button-2" class="inner-content ">
+
+                        <div class="card">
+                            <br><br>
+                            <form class="myForm">
+                                <div class="form-group row">
+                                    <div class="col-md-6">
+                                        <select class="form-control" id="sel1">
+                                        <option value=" " selected>Choisir une banque</option>
+                                        <option>BICIC, II plateau</option>
+                                        <option>SGBCI, Angré Djibi</option>
+                                        <option>SIB, Rivera I</option>
+                                    </select> &nbsp; &nbsp;&nbsp; &nbsp;
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <select class="form-control" id="sel1">
+                                        <option value="" selected>Choisir un service</option>
+                                        <option>Ouverture de compte</option>
+                                        <option>Retrait d'argent</option>
+                                        <option>depôt de chèque</option>
+                                    </select>
+                                    </div>
+                                </div>
+                                <small>
+                                    Veuillez choisir votre modalité de payement puis saisissez le numero de compte correspondant à votre choix
+                                    </small>
+                                <br>
+                                <br>
+
+                                <div>
+                                    <label class="radio-inline"><input type="radio" name="optradio">Visa &nbsp; <img src="./assets/images/VISA.png" width="30" alt=""></label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                    <label class="radio-inline"><input type="radio" name="optradio">Paypal &nbsp; <img src="./assets/images/paypal.png" width="30" alt=""></label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                    <label class="radio-inline"><input type="radio" name="optradio">Mobile Money &nbsp; <img src="./assets/images/orange.png" width="30" alt="">&nbsp; <img src="./assets/images/momo.jpeg" width="20" alt="">&nbsp; <img src="./assets/images/moov.png" width="20" alt="">&nbsp; </label>
+                                </div>
+                                <br><br>
+                                <div class="form-group row">
+                                    <div class="col-md-12">
+                                        <label for="ex2">Veuillez entrer votre numero de compte</label>
+                                        <input class="form-control" id="ex2" type="text">
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-primary" id="myBtn">Valider</button>
+                            </form>
+                            <br><br>
+                        </div>
+
+                        <!-- modald'info -->
+                        <div class="modal fade" id="myModal" role="dialog">
+                            <div class="modal-dialog">
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <br><br>
+                                    <p class="text-center">
+                                        <strong>
+                                            Aller dans la salle d'attente pour voir votre ticket
+                                            </strong>
+                                    </p>
+                                    <br><br>
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- modald'info -->
+                    </div>
+                    <!-- (start)otenir un ticket -->
+
+
+
+
+
+                    <!-- (start)reserver un ticket -->
+                    <div id="button-3" class="inner-content">
+
+                        <div class="card">
+                            <br><br>
+                            <form class="myForm">
+                                <div class="form-group row">
+                                    <div class="col-md-6">
+                                        <select class="form-control" id="sel1">
+                                            <option value="" selected>Choisir une banque</option>
+                                            <option>BICIC, II plateau</option>
+                                            <option>SGBCI, Angré Djibi</option>
+                                            <option>SIB, Rivera I</option>
+                                        </select> &nbsp; &nbsp;&nbsp; &nbsp;
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <select class="form-control" id="sel1">
+                                            <option value="" selected>Choisir un service</option>
+                                            <option>Ouverture de compte</option>
+                                            <option>Retrait d'argent</option>
+                                            <option>depôt de chèque</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <small>
+                                        Veuillez choisir votre modalité de payement puis saisissez le numero de compte correspondant à votre choix
+                                        </small>
+                                <br>
+                                <br>
+
+                                <div>
+                                    <label class="radio-inline"><input type="radio" name="optradio">Visa &nbsp; <img src="./assets/images/VISA.png " width="30" alt=""></label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                    <label class="radio-inline"><input type="radio" name="optradio">Paypal &nbsp; <img src="./assets/images/paypal.png" width="30" alt=""></label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                    <label class="radio-inline "><input type="radio" name="optradio">Mobile Money &nbsp; <img src="./assets/images/orange.png" width="30" alt="">&nbsp; <img src="./assets/images/momo.jpeg" width="20" alt="">&nbsp; <img src="./assets/images/moov.png" width="20" alt=" ">&nbsp; </label>
+                                </div>
+                                <br><br>
+                                <div class="form-group row">
+                                    <div class="col-md-6">
+                                        <label for="ex2">Veuillez entrer votre numero de compte</label>
+                                        <input class="form-control" id="ex2" type="text">
+                                    </div> 
+                                    <div class="col-md-6">
+                                        <label for="ex2">Date de réservation</label>
+                                        <input class="form-control" id="ex2" type="date">
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-success" id="myBton">Reserver</button>
+                            </form>
+                            <br><br>
+                        </div>
+
+                        <!-- (start)modal reserver -->
+                        <div class="modal fade" id="myModl" role="dialog">
+                            <div class="modal-dialog ">
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <br><br>
+                                    <p class="text-center">
+                                        <strong>
+                                            Ticket réservé avec succès
+                                            </strong>
+                                    </p>
+                                    <br><br>
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- (start)modal reserver -->
+                    </div>
+                    <!-- (end) reserver un tickt-->
+
+
+
+                    <!-- (start)salle 'dattente -->
+                    <div id="button-4" class="inner-content">
+                        <div class="item_wrap">
+                            <div class="item">
+                                <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th> Liste des tickets en attente</th>
+        <th>pour le retrait d'argent</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+        Ticket&nbsp; QLM &nbsp; n°000234<br>
+         Ticket&nbsp; QLM &nbsp; n°000237<br>
+          Ticket&nbsp; QLM &nbsp; n°000238<br>
+          Ticket&nbsp; QLM &nbsp; n°000234<br>
+          <h6 style="color: #F95959; !important">Ticket&nbsp; QLM n°000245</h6>
+         Ticket&nbsp; QLM &nbsp; n°000237<br>
+          Ticket&nbsp; QLM &nbsp; n°000267<br>
+          Ticket&nbsp; QLM &nbsp; n°000234<br>
+           Ticket&nbsp; QLM &nbsp; n°000234<br>
+         Ticket&nbsp; QLM &nbsp; n°000237<br>
+          Ticket&nbsp; QLM &nbsp; n°000267<br>
+          Ticket&nbsp; QLM &nbsp; n°000234<br>
+         
+      </td>
+      <td>
+     Ticket&nbsp; QLM &nbsp; n°000234<br>
+         Ticket&nbsp; QLM &nbsp; n°000237<br>
+          Ticket&nbsp; QLM &nbsp; n°000267<br>
+          Ticket&nbsp; QLM &nbsp; n°000234<br>
+           Ticket&nbsp; QLM &nbsp; n°000234<br>
+         Ticket&nbsp; QLM &nbsp; n°000237<br>
+          Ticket&nbsp; QLM &nbsp; n°000267<br>
+          Ticket&nbsp; QLM &nbsp; n°000234<br>
+           Ticket&nbsp; QLM &nbsp; n°000234<br>
+         Ticket&nbsp; QLM &nbsp; n°000237<br>
+          Ticket&nbsp; QLM &nbsp; n°000267<br>
+          Ticket&nbsp; QLM &nbsp; n°000234<br>
+      </td>
+      </tr>
+    </tbody>
+  </table>
+                            </div>
+                            <div class="item">
+                                <h3 class="text-center">VOTRE TICKET</h3>
+
+                            <img src="./assets/images/tok.png" width="300">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- (start)salle 'dattente -->
+
+
+                </div>
+                <!-- content -->
+
+            </div>
+            <!-- container -->
+
+        </div>
+        <!-- mainbody -->
+
+    </div>
+    <!-- wrapper -->
+
+</div>
+<!--ttou-->

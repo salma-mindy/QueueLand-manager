@@ -1,0 +1,24 @@
+<nav class="navbar fixed-top navbar-expand-md custom-navbar mb-5">
+    <img class="navbar-brand" src="assets/images/logga.png" id="logo_custom" width="10%" alt="logo">
+    <button class="navbar-toggler navbar-toggler-right custom-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+           <span class="navbar-toggler-icon "></span>
+       </button>
+    <div class="collapse navbar-collapse " id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto ">
+            <li class="nav-item">
+                <a class="nav-link" *ngIf="loginbtn" href="#about" data-offset="90"><button class="btn btn-navb" style="color: #fff; background-color: #f95959 !important;">Accueil</button></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" *ngIf="loginbtn" href="#login"><button class="btn btn-navb" style="background-color: #108d6f !important;">S'inscrire</button></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" *ngIf="loginbtn" href="#login"><button class="btn btn-navb" style="background-color: #108d6f !important;">Se connecter</button></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" *ngIf="loginbtn" routerLink="/contact"><button class="btn btn-navb" style="color: #fff; background-color: #f95959 !important;">Contact</button></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<br>
+<br>

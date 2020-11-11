@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>QueuelandManager</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="../assets/images/logga.png">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script>
+
+</head>
+
+<body>
+    <app-root></app-root>
+
+    <script>
+        //   le carrousel
+        wow = new WOW({
+            animateClass: 'animated',
+            offset: 100,
+            callback: function(box) {
+                console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+            }
+        });
+        wow.init();
+        document.getElementById('moar').onclick = function() {
+            var section = document.createElement('section');
+            section.className = 'section--purple wow fadeInDown';
+            this.parentNode.insertBefore(section, this);
+        };
+        //   le carrousel
+    </script>
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#dismiss, .overlay').on('click', function() {
+                $('#sidebar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function() {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function() {
+            $(".hamburger").click(function() {
+                $(".wrapper").toggleClass("active")
+            })
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".sidebar-btn").click(function() {
+                $(".wrapper").toggleClass("collapse");
+            });
+        });
+    </script>
+
+
+    <script>
+        function Buttonclick(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("inner-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += "active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+
+
+
+
+    <script>
+        $(document).ready(function() {
+            var zindex = 10;
+
+            $("div.card").click(function(e) {
+                e.preventDefault();
+
+                var isShowing = false;
+
+                if ($(this).hasClass("d-card-show")) {
+                    isShowing = true
+                }
+
+                if ($("div.dashboard-cards").hasClass("showing")) {
+                    // a card is already in view
+                    $("div.card.d-card-show")
+                        .removeClass("d-card-show");
+
+                    if (isShowing) {
+                        // this card was showing - reset the grid
+                        $("div.dashboard-cards")
+                            .removeClass("showing");
+                    } else {
+                        // this card isn't showing - get in with it
+                        $(this)
+                            .css({
+                                zIndex: zindex
+                            })
+                            .addClass("d-card-show");
+
+                    }
+
+                    zindex++;
+
+                } else {
+                    // no dashboard-cards in view
+                    $("div.dashboard-cards")
+                        .addClass("showing");
+                    $(this)
+                        .css({
+                            zIndex: zindex
+                        })
+                        .addClass("d-card-show");
+
+                    zindex++;
+                }
+
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function() {
+            $("#myBtn").click(function() {
+                $("#myModal").modal();
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function() {
+            $("#myBton").click(function() {
+                $("#myModl").modal();
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $('#example').DataTable();
+        });
+    </script>
+
+
+
+    <script>
+        $(document).ready(function() {
+            // Activate tooltip
+            $('[data-toggle="tooltip"]').tooltip();
+
+            // Select/Deselect checkboxes
+            var checkbox = $('table tbody input[type="checkbox"]');
+            $("#selectAll").click(function() {
+                if (this.checked) {
+                    checkbox.each(function() {
+                        this.checked = true;
+                    });
+                } else {
+                    checkbox.each(function() {
+                        this.checked = false;
+                    });
+                }
+            });
+            checkbox.click(function() {
+                if (!this.checked) {
+                    $("#selectAll").prop("checked", false);
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $(".hamburger .fas").click(function() {
+                $(".wrapper").addClass("active")
+            })
+
+            $(".wrapper .sidebar .close").click(function() {
+                $(".wrapper").removeClass("active")
+            })
+        })
+    </script>
+    <script>
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+
+        $(document).ready(function() {
+            $("#example").DataTable();
+        });
+
+        var dData = function() {
+            return Math.round(Math.random() * 90) + 10;
+        };
+    </script>
+</body>
+
+</html>
