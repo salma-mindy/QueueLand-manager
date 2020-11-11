@@ -1,0 +1,408 @@
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">QueueLand</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+</nav>
+<div class="tout">
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <br> <br>
+                <li class="tablinks active" onclick="Buttonclick(event, 'button-1')" id="defaultOpen">
+                    <button class="MnBtn">
+                        <i class="fa fa-home"></i> &nbsp;
+                        <span>Accueil &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>
+                    </button>
+                </li>
+                <br>
+                <li class="tablinks" onclick="Buttonclick(event, 'button-2')">
+                    <button class="MnBtn">
+                        <i class="fa fa-users"></i> &nbsp;
+                        <span>Salle d'attente</span>
+                    </button>
+                </li>
+                <br>
+                <li class="tablinks" onclick="Buttonclick(event, 'button-3')">
+                    <button>
+                        <i class="fa fa-th-list"></i> 
+                        <span>Tickets réservés</span>
+                    </button>
+                </li>
+                <br>
+
+                
+                    <li class="tablinks" onclick="Buttonclick(event, 'button-4')">
+                        <!-- <div class="dropdown"> -->
+                            <!-- <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> -->
+                        <button class="MnBtn">
+                            <i class="fa fa-cogs"></i> &nbsp;
+                            <span>Gestions &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>
+                        </button>
+                        <!-- <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a  class="dropdown-item" href="#">kkk</a>
+                            <a  class="dropdown-item" href="#">kkk</a>
+                           
+                        </div> -->
+                        <!-- </div> -->
+                    </li>
+
+
+                <li class="tablinks" onclick="Buttonclick(event, 'button-5')">
+                    <button>
+                        <i class="fa fa-wpforms"></i> &nbsp;
+                      Historique &nbsp; &nbsp; &nbsp; &nbsp;
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div class="content">
+            <br><br>
+            <div id="button-1" class="inner-content">
+                <div class="row">
+                    <!-- token card -->
+                    <div class="col-md-7">
+                        <h6 class="test">Ticket en service</h6>
+                        <br><br><br>
+                        <div class="card MCard">
+                            <p class="text-center" style="color: F95757 !important; font-size: 30px !important;">
+                                QLM012R22
+                                   <br><br>
+                            <span> Service: Open Account </span></p>
+                     
+                        </div>
+                        <br><br><br><br><br><br><br><br><br><br>
+                        <div class="card TCard mt-5 text-center">
+                            Total des tickets reçu: 10 <br> Performance: Excellente
+                        </div>
+                    </div>
+                    <!-- token card -->
+
+                    <!-- call token card -->
+                    <div class="col-md-5">
+                        <button class="card MonCard">Suivant</button>
+                        <button class="card MonCard">Appeler</button>
+                        <button class="card MonCard">Rappeler</button>
+                        <button class="card MonCard">Annuler</button>
+                        <button class="card MonCard">Transferer</button>
+                        <button class="card MonCard">Traiter à distance</button>
+                    </div>
+                    <!-- call token card -->
+                </div>
+                <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+            </div>
+
+            <div id="button-2" class="inner-content">
+                <div class="table-responsive">
+                    <div class="table-wrapper">
+                        <div class="table-title">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <h2>TICKET EN ATTENTE</h2>
+                                </div>
+                                <div class="col-sm-6">
+                                    <a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Ajouter un ticket</span></a>
+                                    <a href="#deleteEmployeeModal" class="btn" data-toggle="modal"><i class="material-icons">&#xE15C;</i> <span>Supprimer</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <table class="table table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th>
+
+                                    </th>
+                                    <th>N° de ticket</th>
+                                    <th>Service</th>
+                                    <th>N° de téléphone</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                    </td>
+                                    <td>QLM 0033R09</td>
+
+                                    <td>Retrait d'argent</td>
+                                    <td>+225 56789876</td>
+                                    <td>
+                                        <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Editer">&#xE254;</i></a>
+                                        <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Supprimer">&#xE872;</i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    </td>
+                                    <td>QLM 063R23</td>
+
+                                    <td>Depôt de dossier</td>
+                                    <td>+225 45678909</td>
+                                    <td>
+                                        <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                                        <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Supprimer">&#xE872;</i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    </td>
+                                    <td>QLM 078R33</td>
+
+                                    <td>Demande de prêt</td>
+                                    <td>+225 78987654</td>
+                                    <td>
+                                        <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                                        <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Supprimer">&#xE872;</i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    </td>
+                                    <td>QLM052R15</td>
+
+                                    <td>Depôt de dossier</td>
+                                    <td>+225 54334578</td>
+                                    <td>
+                                        <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                                        <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Supprimer">&#xE872;</i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    </td>
+                                    <td>QLM002R02</td>
+                                    <td>Ouverture de compte</td>
+
+                                    <td>+225 78954456</td>
+                                    <td>
+                                        <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                                        <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Supprimer">&#xE872;</i></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="clearfix">
+                            <ul class="pagination">
+                                <li class="page-item disabled"><a href="#">Précédent</a></li>
+                                <li class="page-item"><a href="#" class="page-link">1</a></li>
+                                <li class="page-item"><a href="#" class="page-link">2</a></li>
+                                <li class="page-item active"><a href="#" class="page-link">3</a></li>
+                                <li class="page-item"><a href="#" class="page-link">4</a></li>
+                                <li class="page-item"><a href="#" class="page-link">5</a></li>
+                                <li class="page-item"><a href="#" class="page-link">Suivant</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Edit Modal HTML -->
+            <div id="addEmployeeModal" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <form>
+                            <div class="modal-header">
+                                <h4 class="modal-title">Ajouter un ticket</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label>N°de ticket</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Services</label>
+                                    <textarea class="form-control" required></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label>N° de téléphone</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <input type="button" class="btn btn-default" data-dismiss="modal" value="Annuler">
+                                <input type="submit" class="btn btn-success" value="Add">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Edit Modal HTML -->
+            <div id="editEmployeeModal" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <form>
+                            <div class="modal-header">
+                                <h4 class="modal-title">Editer un ticket</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label>N° de ticket</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Service</label>
+                                    <input type="email" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Banque</label>
+                                    <textarea class="form-control" required></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label>Numero de téléphone</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <input type="button" class="btn btn-default" data-dismiss="modal" value="Annuler">
+                                <input type="submit" class="btn btn-info" value="Modifier">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Supprimer Modal HTML -->
+            <div id="deleteEmployeeModal" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <form>
+                            <div class="modal-header">
+                                <h4 class="modal-title">Supprimer un ticket</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Voulez-vous vraiment supprimer ce ticket ?</p>
+                                <p class="text-warning"><small>Action irreversible</small></p>
+                            </div>
+                            <div class="modal-footer">
+                                <input type="button" class="btn btn-default" data-dismiss="modal" value="Annuler">
+                                <input type="submit" class="btn btn-danger" value="Supprimer">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+            </div>
+            <div id="button-3" class="inner-content">
+                <p class="text-justify"> TICKETS RESERVES </p>
+                <table id="example" class="table table-striped table-bordered" style="width:85%">
+                    <thead>
+                        <tr>
+                            <th>N° de ticket</th>
+                            <th>Service</th>
+                            <th>N° de téléphone</th>
+                            <th>Date</th>
+                            <th>Heure</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>QLM001R01</td>
+                            <td>Demande de prêt</td>
+                            <td>+225 56789876</td>
+                            <td>25/09/2020</td>
+                            <td>13h-15H</td>
+                        </tr>
+                        <tr>
+                            <td>QLM002R02</td>
+                            <td>Ouverture de compte</td>
+                            <td>+225 67890988</td>
+                            <td>29/09/2020</td>
+                            <td>8h-12H</td>
+                        </tr>
+                        <tr>
+                            <td>QLM003R03</td>
+                            <td>Ouverture de compte</td>
+                            <td>+225 67890988</td>
+                            <td>15/10/2020</td>
+                            <td>8h-12H</td>
+                        </tr>
+                        <tr>
+                            <td>QLM004R04</td>
+                            <td>Depôt d'argent</td>
+                            <td>+225 66778899</td>
+                            <td>21/10/2020</td>
+                            <td>13h-15H</td>
+
+                        </tr>
+                        <tr>
+                            <td>QLM005R05</td>
+                            <td>Retrait d'argent</td>
+                            <td>+225 88990000</td>
+                            <td>15/10/2020</td>
+                            <td>8h -12H</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+            </div>
+            <div id="button-4" class="inner-content">
+            <div class="row">
+            <div class="col-md-5"> 
+                <div class="card">
+                    <div class="card-body">
+                        <form  action="/action_page.php">
+                            <div class="form-group">
+                                <label for="text">Numero du service</label>&nbsp;
+                                <input type="text" class="form-control" id="service"><br>
+                                <label for="text">Nom du service</label>&nbsp;
+                                <input type="text" class="form-control" id="service"><br>
+                                <label for="text">Nom de l'agent</label>&nbsp;
+                                <input type="text" class="form-control" id="service">
+                            </div>
+                            &nbsp; &nbsp;
+                            <button type="submit" class="btn btn-success">Enrégistrer</button>
+                        </form>
+                    </div>
+                </div>
+</div>
+              <div class="col-md-6"> 
+                <h4>Liste des services par agence</h4> <br>     
+
+                <div class="card">
+                    <div class="card-body">
+                        <form  action="/action_page.php">
+                            <div class="form-group">
+                                <label for="text">Selectionnez une commune</label>&nbsp;
+                                <input type="text" class="form-control" id="service" placeholder="--- Commune ---"><br>
+                                <label for="text">Choisissez une agence</label>&nbsp;
+                                <input type="text" class="form-control" id="service" placeholder="--- Agence ---"><br>
+
+                            </div>
+                            &nbsp; &nbsp;
+                            <button type="submit" class="btn btn-success">Afficher</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- <div class="Malist">
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-secondary text-center" style="max-height: 200px; overflow: auto;">
+                            <h4>Liste des services</h4>        
+                        </li>
+                        <li class="list-group-item">Ouverture de compte</li>
+                        <li class="list-group-item">Retrait d'argent</li>
+                        <li class="list-group-item">Depôt de dossier</li>
+                        <li class="list-group-item">Reclammation</li>
+                        <li class="list-group-item">Renseignement</li>
+                         <li class="list-group-item">Renseignement</li>
+                    </ul>
+                </div> -->
+                <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+            </div>
+            <div class="col-md-1"> </div>
+            </div>
+            </div>
+
+            <div id="button-5" class="inner-content">
+                <i>Bientôt disponible</i>
+            </div>
+    </div>
+    </div>
+</div>
+
