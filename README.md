@@ -25,7 +25,7 @@ Après connexion, nous pouvons voir le ticket en service, appeler le ticket suiv
 
 Lsite de toutes les personnes en attentes avec leur differentes informations
 
-![https://nsa40.casimages.com/img/2020/11/11/201111064555120076.jpghttps://nsa40.casimages.com/img/2020/11/11/201111064555120076.jpg)
+![https://nsa40.casimages.com/img/2020/11/11/201111064555120076.jpg](https://nsa40.casimages.com/img/2020/11/11/201111064555120076.jpg)
 
 
 #### Visualisation des tickets réservé
